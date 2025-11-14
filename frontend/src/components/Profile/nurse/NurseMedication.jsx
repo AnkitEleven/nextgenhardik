@@ -42,7 +42,7 @@ function NurseMedication() {
 
   const handleAddMedication = async(e) =>{
     e.preventDefault() ;
-    await axios.post(`https://hmsmern.onrender.com/user/add-medications/${changePatient}`,{name ,  frequency , dosage})
+    await axios.post(`https://healthcare-x8vk.onrender.com/user/add-medications/${changePatient}`,{name ,  frequency , dosage})
     .then((res) =>{
       Swal.fire({
         title: "Success",
