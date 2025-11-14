@@ -27,7 +27,7 @@ function NurseMedication() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://hmsmern.onrender.com/user/get-users");
+        const response = await axios.get("https://healthcare-x8vk.onrender.com/user/get-users");
         setPatients(response.data);
         
       } catch (error) {
