@@ -39,7 +39,7 @@ function AdminDoctor() {
 
   const handleAddDoctor = async (e) => {
     e.preventDefault();
-    await axios.post("https://hmsmern.onrender.com/doctor/add-doctor",{
+    await axios.post("https://healthcare-x8vk.onrender.com/doctor/add-doctor",{
         name:docname,
         specialization:docspec,
         email:docemail
@@ -65,7 +65,7 @@ function AdminDoctor() {
 
   const editPatient = async (id) => {
     await axios
-      .put(`https://hmsmern.onrender.com/doctor/update-doctor/${id}`, {})
+      .put(`https://healthcare-x8vk.onrender.com/doctor/update-doctor/${id}`, {})
       .then((res) => {
         Swal.fire({
           title: "Success",
@@ -84,7 +84,7 @@ function AdminDoctor() {
 
   const deletePatient = async (id) => {
     await axios
-      .delete(`https://hmsmern.onrender.com/doctor/delete-doctor/${id}`,)
+      .delete(`https://healthcare-x8vk.onrender.com/doctor/delete-doctor/${id}`,)
       .then((res) => {
         Swal.fire({
           title: "Success",
