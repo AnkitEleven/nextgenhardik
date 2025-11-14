@@ -36,7 +36,7 @@ function AdminNurse() {
   useEffect(() => {
     const getNurses = async () => {
       const data = await axios
-        .get("https://hmsmern.onrender.com/nurse/get-nurses")
+        .get("https://healthcare-x8vk.onrender.com/nurse/get-nurses")
         .then((response) => {
           setNurses(response.data);
         })
@@ -55,7 +55,7 @@ function AdminNurse() {
   const handleAddNurse = async (e) => {
     e.preventDefault();
      await axios
-      .post("https://hmsmern.onrender.com/nurse/add-nurse", {
+      .post("https://healthcare-x8vk.onrender.com/nurse/add-nurse", {
         name: nurname,
         email: nuremail,
         department: nurdept,
