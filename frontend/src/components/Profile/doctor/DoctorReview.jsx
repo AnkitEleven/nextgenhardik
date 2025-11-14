@@ -32,7 +32,7 @@ function DoctorReview() {
       useEffect(() => {
         const getNurses = async () => {
           await axios
-            .get("https://hmsmern.onrender.com/nurse/get-allNurses")
+            .get("https://healthcare-x8vk.onrender.com/nurse/get-allNurses")
             .then((response) => {
               
               setNurses(response.data);
