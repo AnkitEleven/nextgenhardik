@@ -84,9 +84,9 @@ require("dotenv/config");
         if (isPasswordValid) {
           let token, role, loggedInUser;
           if (user) {
-            token = jwt.sign({ id: user._id, role: user.role }, process.env.jwtsecret, {
-              expiresIn: "2d",
-            });
+            token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET, {
+  expiresIn: "2d",
+});
             role = user.role;
             loggedInUser = user;
           } else if (doctor) {
