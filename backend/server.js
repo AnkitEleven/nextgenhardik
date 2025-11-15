@@ -17,6 +17,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(corsMiddleware);
+app.set('trust proxy', true);
+
 
 app.use("/auth",limiter, authController);
 app.use("/user",limiter, userController);
