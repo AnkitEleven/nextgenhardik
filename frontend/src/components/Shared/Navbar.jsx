@@ -60,10 +60,10 @@ function Navbar() {
     {/* Mobile Menu */}
     <div className={`${!isMobNav ? 'hidden' : 'flex'} flex-col absolute top-0 left-0 h-screen w-screen text-white text-2xl justify-center items-center bg-[#3B5BFF] md:hidden transition-all duration-300`}>
       <NavLink className="py-6" style={navLinkStyle} to="/">Home</NavLink>
-      <NavLink className="py-6" style={navLinkStyle} to="/appointment">Appointment</NavLink>
+      
       <NavLink className="py-6" style={navLinkStyle} to="/about-us">About Us</NavLink>
       <NavLink className="py-6" style={navLinkStyle} to="/contact-us">Contact Us</NavLink>
-      <NavLink className="py-6" style={navLinkStyle} to="/sign-in">Sign In</NavLink>
+      <NavLink className="py-6" style={navLinkStyle} to="/sign-in">Log In/Appointment</NavLink>
     </div>
   </div>
 </div>
