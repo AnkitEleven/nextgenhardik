@@ -1,3 +1,4 @@
+require("dotenv").config(); 
 const express = require("express");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
@@ -7,7 +8,7 @@ const User = require("../models/user.js");
 const config = require("config");
 const Doctor = require("../models/doctor.js");
 const Nurse = require("../models/nurse.js");
-require("dotenv/config");
+
 
 
 // const verifyUser = (req, res, next) => {
