@@ -33,7 +33,7 @@ function SignIn() {
     e.preventDefault();
     dispatch(loginProgress());
     axios
-      .post("https://healthcare-x8vk.onrender.com/auth/login", data)
+      .post("https://nextgenhardik-81ne.vercel.app/auth/login", data)
       .then((res) => { 
   
         if (res.data.role === "patient") {
