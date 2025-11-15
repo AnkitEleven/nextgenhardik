@@ -90,13 +90,13 @@ require("dotenv/config");
             role = user.role;
             loggedInUser = user;
           } else if (doctor) {
-            token = jwt.sign({ id: doctor._id, role: doctor.role }, process.env.jwtsecret, {
+            token = jwt.sign({ id: doctor._id, role: doctor.role }, process.env.JWT_SECRET, {
               expiresIn: "2d",
             });
             role = doctor.role;
             loggedInUser = doctor;
           } else if (nurse) {
-            token = jwt.sign({ id: nurse._id, role: nurse.role }, process.env.jwtsecret, {
+            token = jwt.sign({ id: nurse._id, role: nurse.role }, process.env.JWT_SECRET, {
               expiresIn: "2d",
             });
             role = nurse.role;
