@@ -15,7 +15,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchInfo = async (e) => {
       await axios
-        .get("https://healthcare-x8vk.onrender.com/admin/get-count", {
+        .get("https://nextgenhardik-81ne.vercel.app/admin/get-count", {
         })
         .then((res) => {
           setdocount(res.data.doccou);
