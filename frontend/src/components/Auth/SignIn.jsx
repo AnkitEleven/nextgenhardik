@@ -31,6 +31,7 @@ function SignIn() {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
+      console.log("DATA SENDING TO BACKEND:", data);
     dispatch(loginProgress());
     axios
       .post("https://healthcare-x8vk.onrender.com/auth/login", data)
